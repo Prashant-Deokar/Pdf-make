@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="generatePdf()">Download PDF</button>onSendEmail
+<button (click)="onSendEmail()">Send Email</button>
+<button (click)="createEvent()">Add Event</button>
+
+
+<script src="https://apis.google.com/js/api.js"></script>
